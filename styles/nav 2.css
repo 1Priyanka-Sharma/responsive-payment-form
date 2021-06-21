@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: #24252a;
+    position: sticky;
+    top: 0;
+}
+
+.title {
+    display: inline-block;
+    color: #ecedf1;
+    padding-top: 10px;
+    margin-left: 80px;
+    font-family: 'Suez One', serif;
+}
+
+nav a {
+    position: relative;
+    top: 10px;
+    /* padding-top: 10px; */
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* margin: 0px 80px 0px 0px; */
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+nav a:hover {
+    border: 5px solid #0789a7;
+    border-radius: 20px;
+    /* padding-top: 0px ; */
+    background-color: #0789a7;
+    /* color: #FDD20EFF; */
+}

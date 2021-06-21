@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda';
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#navbar img {
+    margin: 5px 30px 0px 60px;
+    height: 49px;
+    width: 58px;
+    clip-path: circle(40.1% at 50% 50%);
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 2px 17px;
+    font-size: 18px;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+#home::before {
+    content: "";
+    background: url("/images/home-background.jpg") no-repeat center/cover;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    font-size: 37px;
+    margin: 10px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+#home button {
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: rgba(255, 68, 0, 0.452);
+}
+
+#home button:hover {
+    background: #FEDA15;
+    border-color: #FEDA15;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    padding: 90px;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    padding: 23px;
+    justify-content: space-evenly;
+}
+
+.sub-tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+    border: 11px solid wheat;
+    border-radius: 30px;
+    color: black;
+}
+
+.sub-tags:hover {
+    transform: scale(1.1);
+}
+
+.sub-tags img {
+    height: 119px;
+    width: 256px;
+    border: 5px solid wheat;
+    border-radius: 15px;
+}
+
+.sub-tags h2 {
+    color: #003300;
+}
+
+.sub-tags p {
+    text-align: center;
+    color: #000033;
+}
+
+#clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+
+#clients::before {
+    content: "";
+    background: url("/images/client-back.png") no-repeat center center/cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#clients h1 {
+    margin-top: 25px;
+}
+
+.sub-clients {
+
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.sub-clients img {
+    clip-path: inset(27% 15% 27% 16%);
+    height: 140px;
+    width: 170px;
+}
+
+.sub-clients img:hover {
+    transform: scale(1.2);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 530px;
+}
+
+#contact::before {
+    content: "";
+    background: url("/images/contact-3.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-group label {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+textarea {
+    width: 500px;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgba(255, 68, 0, 0.452);
+}
+
+
+input[type='submit'] {
+    width: 150px;
+
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgba(255, 68, 0, 0.452);
+}
+
+input[type='submit']:hover {
+    background: #FEDA15;
+    border-color: #FEDA15;
+}
+
+@media screen and (max-width:1192px) {
+    #home p {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:900px),
+(max-width:820px) {
+     #navbar,
+    #home {
+        width: 100%;
+    }
+}
