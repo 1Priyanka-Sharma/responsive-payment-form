@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>hi Navigation Bar</title>
+    <title>Education website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/2766b64c31.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/navbar-grid.css">
@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <nav  class="navbar background h-nav" >
-        <ul class="nav-list v-hidden"  >
-            <div class="logo"><img src="/images/l.png" alt="MY LOGO"></div>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-hidden">
+            <div class="logo"><img src="/images/lapi-1.webp" alt="logo"></div>
             <li> <a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li> <a href="#about">About</a></li>
@@ -28,21 +28,94 @@
         </div>
     </nav>
 
-    <section id="home" class="background">
-        <div class="main-content">
-            <h1>The future of Education is here</h1>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit a facilis possimus debitis nam nisi
-                nemo dolorum, quam earum, obcaecati repellat? Sunt esse aperiam doloremque provident amet excepturi
-                deleniti? Veniam unde aspernatur accusamus debitis dignissimos laudantium nostrum quisquam ea
-                reiciendis? Ducimus maxime ut magni itaque suscipit debitis, sed voluptates delectus.</p>
-            <div class="button-coll">
-                <button>Subscibe</button>
-                <button>Watch Video</button>
+    <section id="home" class="background firstsection">
+        <div class="box-main">
+            <div class="main-content">
+                <p class="text-bg">The future of Education is here</p>
+                <p class="text-sm"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit a facilis possimus
+                    debitis
+                    nemo dolorum, quam earum, obcaecati repellat? Sunt esse aperiam doloremque provident amet excepturi
+                    deleniti? </p>
+                <div class="button-coll">
+                    <button>Subscibe</button>
+                    <button>Watch Video</button>
+                </div>
             </div>
+            <div class="main-icon"> <img src="/images/lapi-1.webp" alt="main-image"> </div>
         </div>
-        <div class="main-icon"> <img src="/images/lapi-1.webp" alt="main-image"> </div>
     </section>
-    <!-- <section>hh</section> -->
+
+    <article class="product1">
+        <div class="product1-content">
+            <p class="product-heading">The future of Education is here</p>
+            <p class="product-subcontent"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit a facilis possimus
+                debitis nemo dolorum, quam earum, obcaecati repellat? Sunt esse aperiam doloremque provident amet excepturi
+                deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam eius nisi odio
+                officia molestias doloribus, ipsum cupiditate? Laboriosam, ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut quasi ab sit assumenda, voluptatem quas autem saepe commodi quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde harum nihil ipsam perferendis porro, minus odio minima amet fugit corporis.</p>
+        </div>
+        <div class="product1-icon"> <img src="https://source.unsplash.com/800x800/?smartphone,books" alt="main-image"> </div>
+    </article>
+
+    <article class="product1 pic-left">
+        <div class="product1-content">
+            <p class="product-heading">The future of Education is here</p>
+            <p class="product-subcontent"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit a facilis possimus
+                debitis nemo dolorum, quam earum, obcaecati repellat? Sunt esse aperiam doloremque provident amet excepturi
+                deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam eius nisi odio
+                officia molestias doloribus, ipsum cupiditate? Laboriosam, ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut quasi ab sit assumenda, voluptatem quas autem saepe commodi quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus incidunt impedit perspiciatis quia consectetur animi sit corrupti a eveniet similique.</p>
+        </div>
+        <div class="product1-icon"> <img src="https://source.unsplash.com/800x800/?smartphone,pen" alt="main-image"> </div>
+    </article>
+
+    <article class="product1">
+        <div class="product1-content">
+            <p class="product-heading">The future of Education is here</p>
+            <p class="product-subcontent"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit a facilis possimus
+                debitis nemo dolorum, quam earum, obcaecati repellat? Sunt esse aperiam doloremque provident amet excepturi
+                deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam eius nisi odio
+                officia molestias doloribus, ipsum cupiditate? Laboriosam, ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut quasi ab sit assumenda, voluptatem quas autem saepe commodi quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur modi dignissimos architecto similique ullam, aperiam exercitationem ab adipisci accusantium labore.</p> 
+        </div>
+        <div class="product1-icon"> <img src="https://source.unsplash.com/800x800/?smartphone,laptop" alt="main-image"> </div>
+    </article>
+
+    <section id="contact">
+        <p style="text-decoration: underline;">Contact Us</p>
+
+        <form method="post" action="" autocomplete="on">
+            <div class="input-group">
+                <label for="name"> Full Name: </label>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+
+            <div class="input-group">
+                <label for="email"> Email:</label>
+                <input type="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label for="number"> Phone Number:</label>
+                <input type="number" name="number" placeholder="Enter your number">
+            </div>
+
+            <div class="input-group">
+                <label for="message"> Message:</label>
+                <textarea name="message" id="" cols="30" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+
+            <div class="input-group">
+                <input type="submit" class="button btn" value="Send">
+            </div>
+
+        </form>
+
+
+
+    </section>
+
+    <footer>
+        <p>Copyright &copy;  -www.educationsite.com -All rights preserved.</p>
+    </footer>
     <script src="/javascript/navbar-grid.js"></script>
 </body>
+
 </html>

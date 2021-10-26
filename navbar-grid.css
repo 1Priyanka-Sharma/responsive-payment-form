@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
     font-family: cursive;
 }
 
@@ -32,6 +31,8 @@ body{
     padding: 1rem;
     position: sticky;
     top: 0;
+    color: white;
+
 }
 
 .nav-list {
@@ -52,6 +53,7 @@ body{
 }
 
 .nav-list li a {
+    color: white;
     text-decoration: none;
     font-size: 1.5rem;
     padding: 0.5rem 1.5rem;
@@ -82,6 +84,7 @@ body{
     margin-right: 2rem;
     font-size: 1.7rem;
     cursor: pointer;
+    color: white;
 }
 
 .min-bar{
@@ -91,100 +94,209 @@ body{
     display: none;
 }    
 
-
-
-section{
+.firstsection{
     height: 100vh;
-    width: 100%;
 }
 
-#home{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5rem;
+.box-main{
+    height: 80%;
+    max-width: 60%;
+    margin: auto;
     overflow: hidden;
+    display: flex;
     align-items: center;
 }
 
 .main-content{
     display: flex;
     flex-direction: column;
-     margin-left: 25rem;
-    /*margin-top: 16rem; */
 }
 
-
-
-.main-content h1{
-    font-size: 3.6rem;
-    font-family: cursive;
+.text-bg{
+    font-size: 2.6rem;
     text-decoration: underline;
     color: rgb(230, 226, 216);
-    letter-spacing:0.2rem ;
 }
 
-.main-content p{
-    /* margin: 01rem 0 2rem 0; */
-    font-size: 1.7rem;
-    font-family: cursive;
+.text-sm{
+    margin: 0.5rem 0 1.2rem 0;
+    font-size: 1.5rem;
     color: rgb(231, 228, 240);
-    width: 64rem;
 }
 
 .button-coll button{
     width: 13rem;
-    height: 4.5rem;
+    height: 4rem;
     color: whitesmoke;
     border-radius: 3rem;
-    border: 0.rem solid #8a8b776c;
     background-color: transparent;
     font-size: 1.6rem;
-    /* margin-right: 1rem; */
     cursor: pointer;
     z-index: 100;
-}
+    margin: 1rem;}
 
 .button-coll button:hover , .button-coll button:focus{
     border-radius: 3rem;
-
 }
-    .main-icon {
-        display: flex;
-        justify-content: flex-start;
-        /* margin-top: 16rem; */
-    }
-    
+  
 .main-icon img{
-    height: 27rem;
-    width: 29rem;
+    height: 21rem;
+    width: 22rem;
     border-radius: 50%;
     border: 0.4rem solid white;
+    margin: 2rem;
 }
 
-@media (max-width: 1055px) {
 
-    html{
-        font-size: rem;
 
+
+article{
+    color: black;
+    width: 100%;
+}
+
+.product1{
+    /* height: 80%; */
+    /* max-width: 60%; */
+    /* margin:3rem 7rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    overflow: hidden;
+}
+
+.product1-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.product-heading {
+    font-size: 2.6rem;
+    text-decoration: underline;
+    color: black;
+}
+
+.product-subcontent {
+        /* margin: 0.5rem 0 1.2rem 0; */
+        font-size: 1.5rem;
+        color: black;
+        max-width: 94%;
+}
+
+.product1-icon img{
+    height: 17rem;
+    width: 18rem;
+    border-radius: 16%;
+    border: 0.4rem solid black;
+    margin: 2rem;
+}
+
+.pic-left{
+    flex-direction: row-reverse;
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(66, 10, 10, 0.4) url('/images/contact\ us.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    overflow: hidden;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-group label, section>p{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+textarea {
+    width: 500px;
+    color: mistyrose;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+input::placeholder, textarea::placeholder{
+    color: blanchedalmond;
+}
+
+
+input[type='submit'] {
+    width: 12rem;
+    margin-top: 20px;
+    height: 3.7rem;
+    font-weight: bold;
+    /* margin-right: 2rem; */
+}
+
+/* #ccd5c4 */
+
+footer{
+background-color: black;
+color: white;
+    display: flex;
+justify-content: center;
+font-size: 1rem;
+    /* padding: 0.5rem; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 525px) {
+    .main-icon img{
+        height: 12rem;
+        width: 9rem;
+        margin: 0;
     }
-    #home{
-        grid-template-columns: 0fr;
-        justify-content: center;
 
-        /* grid-template-rows: 1fr 1fr; */
+}
+
+@media (max-width: 1000px) {
+
+   
+.box-main{
+        flex-direction: column-reverse;
+            }
+    .button-coll{
+        margin: auto;
     }
  .main-content{
-    /* align-items: center; */
-    margin-left: 0rem;
-    /* margin-top: 0rem; */
+     text-align: center;
 }
 
-.main-icon {
-    grid-row: 1/-2;
-    margin: auto;
-} 
 }
+
 
 
 /* This will fire when humburger icon is clicked */
@@ -227,5 +339,13 @@ section{
     .v-hidden{
        opacity: 0;
     }
+
+    .product1{
+        flex-direction: column-reverse;
+    }
+
+    .product1-content{
+        text-align: center;
+   }
 }
 
