@@ -203,7 +203,7 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(66, 10, 10, 0.4) url('/images/contact\ us.jpg');
+    background: rgba(66, 10, 10, 0.4) url('/images/c1.jpg');
     background-size: cover;
     background-blend-mode: darken;
     overflow: hidden;
@@ -227,7 +227,7 @@ input[type='text'],
 input[type='email'],
 input[type='number'],
 textarea {
-    width: 500px;
+    width: 100%;
     color: mistyrose;
     font-size: 1.5rem;
     padding: 5px;
