@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="buttnon">nnn</button>
+    <script>
+        let Friends= ['Priya','Harry','Ron','Hermonine'];
+        Friends.forEach(element => {
+            console.log('Hi  ' + element);
+            
+        });
+
+
+        for (key in Friends) {
+            console.log('Hi  ' + Friends[key]);
+        }
+
+        for (element of Friends) {
+            console.log('Hi  ' + element);
+            
+        }
+btn=document.getElementById('buttnon');
+        btn.addEventListener('mouseover',()=> {
+            
+      
+            console.log('Inside');
+        })
+
+    </script>
+</body>
+</html>
